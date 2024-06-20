@@ -487,15 +487,158 @@ footer hr{
 
 /* ===== Media Queries ===== */
 
-/* Extra Small (xs) Smartphone (portrait - retrato) */
+/* Extra Small (xs): Smartphone (portrait - retrato) */
 
 @media (min-width: 0px) {
+    /* --- Navbar --- */
     nav{
         padding: 0;
         padding-left: 1rem;
         /* background-color: var(--cor-principal); */
         background-color: #c35858;
     }
+
+    .drop-content{
+        background-color: var(--cor-principal);
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .drop-menu{
+        display: block;
+    }
+
+    /* --- Header --- */
+    .titulo{
+        font-size: 1.8rem;
+    }
+
+    .booking{
+        padding: 0.8rem;
+    }
+
+    .booking form{
+        flex-direction: column;
+    }
+
+    form input{
+        width: 100%;
+        margin-bottom: 0.6rem;
+    }
+
+    section{
+        padding: 6rem 2rem;
+    }
+
+    /* --- passeios --- */
+
+    .passeios{
+        flex-direction: column;
+    }
+
+    .fotos-passeio{
+        margin-top: 3rem;
+    }
+
+    .foto{
+        width: 100%;
+    }
+
+    /* --- destinos --- */
+
+    .grupo-destinos{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* --- avaliações */
+
+    .avaliacoes{
+        width: 100%;
+    }
+
+    .carrossel{
+        padding: 0;
+    }
+
+    /* --- footer */
+
+    footer{
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    footer h3{
+        margin-top: 2rem;
+    }
+
+    .empresa p{
+        margin: 1rem 0;
+    }
 }
 
+/* Small (sm): Smartphone (Landscape - paisagem) */
+@media (min-width: 576px) {
+    section{
+        padding: 6rem 4rem;
+    }
+
+    nav{
+        background-color: #89ac68;
+    }
+}
+
+/* Medium (md): Tablet */
+
+@media (min-width: 768px) {
+    section{
+        padding: 6rem 4rem;
+    }
+
+    .booking{
+        padding: 0.8rem 3rem;
+    }
+
+    nav{
+        background-color: #9f9f9f;
+    }
+
+    .foto{
+        width: calc(50% - 0.5rem);
+    }
+
+    .grupo-destinos{
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3rem 1.2rem;
+    }
+
+    footer{
+        padding: 2rem 6rem;
+    }
+}
+
+/* Large (lg): Notebook */
+
+@media(min-width: 992px) {
+
+    nav{
+        padding: 0.6rem 3rem;
+        background-color: var(--cor-principal-alpha);
+        background-color: #ac68a9;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .drop-menu{
+        display: none;
+    }
+
+}
 
