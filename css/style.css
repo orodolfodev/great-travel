@@ -52,6 +52,9 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.5s ease;
+
+
     background-color: var(--cor-principal-alpha);
     padding: 0.6rem 0.3rem;
     color: var(--cor-01);
@@ -305,7 +308,7 @@ section{
     min-width: 50vh;
     margin: 1rem auto;
     padding: 6rem 3rem 2rem;
-    /* border: 1px solid green */
+
 }
 
 .avaliacoes h1{
@@ -446,15 +449,12 @@ footer hr{
     padding: 0.5rem 1rem;
     cursor: pointer;
 
-    /* border: solid 1px yellow; */
 }
 
 .drop-button{
     padding: 0;
     padding-bottom: 0.25rem;
     background-color: inherit;
-
-    /* border: solid 1px red; */
 }
 
 .barra{
@@ -473,7 +473,6 @@ footer hr{
     top: 3rem;
     right: 0;
     background-color: var(--cor-principal-alpha);
-    /* background-color: var(--cor-principal); */
     box-shadow: var(--sombra);
 }
 
@@ -499,7 +498,7 @@ footer hr{
         padding: 0;
         padding-left: 1rem;
         background-color: var(--cor-principal);
-        /* background-color: #c35858; */
+    
     }
 
     .drop-content{
@@ -590,9 +589,6 @@ footer hr{
         padding: 6rem 4rem;
     }
 
-    nav{
-        /* background-color: #89ac68; */
-    }
 }
 
 /* Medium (md): Tablet */
@@ -606,9 +602,7 @@ footer hr{
         padding: 0.8rem 3rem;
     }
 
-    nav{
-        /* background-color: #9f9f9f; */
-    }
+    
 
     .foto{
         width: calc(50% - 0.5rem);
@@ -633,7 +627,7 @@ footer hr{
     nav{
         padding: 0.6rem 3rem;
         background-color: var(--cor-principal-alpha);
-        /* background-color: #ac68a9; */
+        
     }
 
     .menu{
@@ -694,9 +688,7 @@ footer hr{
 /* Extra Large (xl): Desktop */
 
 @media(min-width: 1200px) {
-    nav{
-        /* background-color: #d1c062; */
-    }
+    
 
     .foto{
         width: calc(50% - 0.5rem);
